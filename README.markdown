@@ -7,7 +7,7 @@ sbt new knoldus/play-java-jpa.g8
 
 License
 -------
-Written in **2016** by [Knoldus Software LLP](http://knoldus.com)
+Written in **2017** by [Knoldus Software LLP](http://knoldus.com)
 [other author/contributor lines as appropriate]
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
