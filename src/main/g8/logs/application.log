@@ -72,3 +72,18 @@ Caused by: java.lang.RuntimeException: No EntityManager found in the context. Tr
 	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
 	... 14 common frames omitted
 2017-01-02 22:46:21,624 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2017-05-24 11:08:53,651 [INFO] from application in pool-1-thread-1 - Creating Pool for datasource 'default'
+2017-05-24 11:08:54,150 [INFO] from play.api.db.HikariCPConnectionPool in pool-1-thread-1 - datasource [default] bound to JNDI as TestDS
+2017-05-24 11:09:00,120 [INFO] from application in pool-1-thread-1 - Creating Pool for datasource 'default'
+2017-05-24 11:09:00,124 [INFO] from play.api.db.HikariCPConnectionPool in pool-1-thread-1 - datasource [default] bound to JNDI as TestDS
+2017-05-24 11:09:00,716 [INFO] from application in pool-1-thread-1 - Shutting down connection pool.
+2017-05-24 11:09:00,843 [INFO] from application in pool-1-thread-1 - Creating Pool for datasource 'default'
+2017-05-24 11:09:00,844 [INFO] from play.api.db.HikariCPConnectionPool in pool-1-thread-1 - datasource [default] bound to JNDI as TestDS
+2017-05-24 11:09:01,050 [INFO] from application in pool-1-thread-1 - Creating Pool for datasource 'default'
+2017-05-24 11:09:01,052 [INFO] from play.api.db.HikariCPConnectionPool in pool-1-thread-1 - datasource [default] bound to JNDI as TestDS
+2017-05-24 11:09:01,174 [INFO] from application in pool-1-thread-1 - Shutting down connection pool.
+2017-05-24 11:09:01,311 [INFO] from application in pool-1-thread-1 - Creating Pool for datasource 'default'
+2017-05-24 11:09:01,314 [INFO] from play.api.db.HikariCPConnectionPool in pool-1-thread-1 - datasource [default] bound to JNDI as TestDS
+2017-05-24 11:09:01,486 [INFO] from application in pool-1-thread-1 - Creating Pool for datasource 'default'
+2017-05-24 11:09:01,487 [INFO] from play.api.db.HikariCPConnectionPool in pool-1-thread-1 - datasource [default] bound to JNDI as TestDS
+2017-05-24 11:09:01,648 [INFO] from application in pool-1-thread-1 - Shutting down connection pool.

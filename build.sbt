@@ -1,24 +1,12 @@
-import play.sbt.PlayJava
-
-name := """play-java-jpa"""
-
-version := "1.0-SNAPSHOT"
-
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
-
-scalaVersion := "2.11.7"
-
-libraryDependencies ++= Seq(
-  javaJpa,
-  cache,
-  javaWs,
-  "org.hibernate" % "hibernate-entitymanager" % "5.2.5.Final" exclude("dom4j", "dom4j"),
-  "mysql" % "mysql-connector-java" % "6.0.5",
-  "dom4j" % "dom4j" % "1.6.1" intransitive()
-)
-
-libraryDependencies += evolutions
-
-fork in run := true
-
-javaOptions in Test += "-Dconfig.file=conf/application.test.conf"
+// This build is for this Giter8 template.
+// To test the template run `g8` or `g8Test` from the sbt session.
+// See http://www.foundweekends.org/giter8/testing.html#Using+the+Giter8Plugin for more details.
+lazy val root = (project in file(".")).
+  settings(
+    name := "play-java-jpa",
+    test in Test := {
+      val _ = (g8Test in Test).toTask("").value
+    },
+    scriptedLaunchOpts ++= List("-Xms1024m", "-Xmx1024m", "-XX:ReservedCodeCacheSize=128m", "-XX:MaxPermSize=256m", "-Xss2m", "-Dfile.encoding=UTF-8"),
+    resolvers += Resolver.url("typesafe", url("http://repo.typesafe.com/typesafe/ivy-releases/"))(Resolver.ivyStylePatterns)
+  )
